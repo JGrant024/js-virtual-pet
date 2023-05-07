@@ -8,6 +8,7 @@ let moodLevel = "0";
 const petNameEl = document.querySelector("#pet-name");
 const hungerEl = document.querySelector("#hunger-level");
 const moodEl = document.querySelector("#mood");
+const moodLevelEl = document.querySelector("#mood-level"); 
 
 // Get DOM elements for the action buttons
 const feedButton = document.getElementById("feed-button");
