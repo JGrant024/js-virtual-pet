@@ -1,12 +1,12 @@
 // Set initial values for the pet's status
-let petName = "Kodee";
+let petName = "Mali";
 let hungerLevel = 100;
 let mood = "Angry";
-let moodLevel = "0"
+let moodLevel = "0";
 
 // Get DOM elements for the pet's status
 const petNameEl = document.querySelector("#pet-name");
-const hungerEl = document.querySelector("#hunger-level");   
+const hungerEl = document.querySelector("#hunger-level");
 const moodEl = document.querySelector("#mood");
 
 // Get DOM elements for the action buttons
