@@ -3,16 +3,19 @@ let petName = "Mali";
 let hungerLevel = 100;
 let mood = "Angry";
 let moodLevel = "0";
+let sleepLevel = "Sleepy";
 
 // Get DOM elements for the pet's status
 const petNameEl = document.querySelector("#pet-name");
 const hungerEl = document.querySelector("#hunger-level");
 const moodEl = document.querySelector("#mood");
-const moodLevelEl = document.querySelector("#mood-level"); 
+const moodLevelEl = document.querySelector("#mood-level");
+const sleepLevelEl = document.querySelector("#sleep-level");
 
 // Get DOM elements for the action buttons
 const feedButton = document.getElementById("feed-button");
 const playButton = document.getElementById("play-button");
+const sleepButton = document.getElementById("sleep-button");
 
 // Function to update the pet's status when fed
 function feedPet() {
@@ -45,6 +48,19 @@ function playWithPet() {
   }
 }
 
+function makePetSleep() {
+  if (sleepLevel < 10) {
+    sleepLevel += 20;
+    sleepLevelEl.innerText = sleepLevel + "%";
+    mood = "Sleepy";
+    moodEl.innerText = mood;
+  } else {
+    mood = "Happy";
+    moodEl.innerText = mood;
+  }
+}
+
 // Add event listeners to the action buttons
 feedButton.addEventListener("click", feedPet);
 playButton.addEventListener("click", playWithPet);
+sleepButton.addEventListener("click", makePetSleep);

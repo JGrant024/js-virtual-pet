@@ -9,3 +9,14 @@
   width: 50%;
   border: 10px solid #555;
 }
+
+h1 {
+  text-align: center;
+}
+.status-container {
+  text-align: center;
+}
+
+.action-container {
+  text-align: center;
+}
