@@ -49,7 +49,7 @@ function codeWithPet() {
 
 function showMessage() {
   alert(
-    "Hi there! Welcome to MaliCat's world! We love to Eat, and Develop Code! Come and hang out with me!"
+    "Hi there! Welcome to MaliCat's world! We love to Eat, and Develop Code! Come and hang out with me! Click feed to change the mood and hover-over the code button watch me build!"
   );
 }
 
@@ -57,4 +57,4 @@ showMessage();
 
 // Add event listeners to the action buttons
 feedButton.addEventListener("click", feedPet);
-codeButton.addEventListener("click", codeWithPet);
+codeButton.addEventListener("mouseover", codeWithPet);

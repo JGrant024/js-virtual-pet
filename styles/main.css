@@ -1,5 +1,7 @@
 .pet-container {
   background: linear-gradient(#e80606, #040000, #059718, yellow);
+  max-height: auto;
+  margin: 0%;
 }
 
 .Mali {
@@ -20,3 +22,5 @@ h1 {
 .action-container {
   text-align: center;
 }
+
+
