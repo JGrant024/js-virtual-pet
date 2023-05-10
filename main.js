@@ -22,7 +22,7 @@ const playButton = document.getElementById("play-button");
 
 // Function to update the pet's status when fed
 function feedPet() {
-  if (hungerLevel >= 100) {
+  if (hungerLevel >= 0) {
     hungerLevel -= 10;
     hungerEl.innerText = hungerLevel + "%";
     mood = "Happy";
