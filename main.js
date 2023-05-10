@@ -11,11 +11,13 @@ const hungerEl = document.querySelector("#hunger-level");
 const moodEl = document.querySelector("#mood");
 const moodLevelEl = document.querySelector("#mood-level");
 const sleepLevelEl = document.querySelector("#sleep-level");
+const codeLevelEl = document.querySelector("code-level");
 
 // Get DOM elements for the action buttons
 const feedButton = document.getElementById("feed-button");
 const playButton = document.getElementById("play-button");
-const sleepButton = document.getElementById("sleep-button");
+const sleepingButton = document.getElementById("sleep-button");
+const codeButton = document.getElementById("code-button");
 
 // Function to update the pet's status when fed
 function feedPet() {
@@ -35,6 +37,17 @@ function feedPet() {
   }
 }
 
+// function to update the pet's sleep level
+
+function makePetSleep() {
+  if (sleepLevel < 40) {
+    sleepLevel += 100;  
+    sleepLevelEl.innerText = Sleepy;
+  } else {
+    sleepLevel = 0
+  }
+}
+
 // Function to update the pet's status when played with
 function playWithPet() {
   if (hungerLevel < 90) {
@@ -42,25 +55,27 @@ function playWithPet() {
     hungerEl.innerText = hungerLevel + "%";
     mood = "Excited";
     moodEl.innerText = mood;
+    r;
   } else {
     mood = "Bored";
     moodEl.innerText = mood;
   }
 }
+playWithPet();
 
-function makePetSleep() {
-  if (sleepLevel < 10) {
-    sleepLevel += 20;
-    sleepLevelEl.innerText = sleepLevel + "%";
-    mood = "Sleepy";
-    moodEl.innerText = mood;
-  } else {
-    mood = "Happy";
-    moodEl.innerText = mood;
-  }
+// function codeButton() {
+//  if (codeButton)
+// }
+
+function showMessage() {
+  alert(
+    "Hi there! Welcome to Mali's world! We love to Eat, Sleep and Develop Code! Come and hang out with me!"
+  );
 }
+
+showMessage();
 
 // Add event listeners to the action buttons
 feedButton.addEventListener("click", feedPet);
 playButton.addEventListener("click", playWithPet);
-sleepButton.addEventListener("click", makePetSleep);
+sleepingButton.addEventListener("click", makePetSleep);
