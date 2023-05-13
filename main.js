@@ -14,10 +14,6 @@ const moodLevelEl = document.querySelector("#mood-level");
 const feedButton = document.getElementById("feed-button");
 const codeButton = document.getElementById("code-button");
 
-// TODO: The way we update and use hungerLevel can cause unexpected results
-// Ask the students if they can think of a way to improve the code
-
-// TODO: Ask the students to explain type coercion
 // I found the following documentation on type coercion https://www.scaler.com/topics/javascript/type-coercion-javascript/
 
 // Function to update the pet's status when fed
@@ -34,7 +30,7 @@ function feedPet() {
     moodEl.innerText = mood;
   }
 }
-// Function to update the pet's status when played with
+
 function codeWithPet() {
   if (hungerLevel < 100) {
     hungerLevel += 10;
@@ -55,6 +51,6 @@ function showMessage() {
 
 showMessage();
 
-// Add event listeners to the action buttons
+// Event listeners
 feedButton.addEventListener("click", feedPet);
 codeButton.addEventListener("click", codeWithPet);
