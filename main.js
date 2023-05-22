@@ -45,7 +45,7 @@ function codeWithPet() {
 
 function showMessage() {
   alert(
-    "Hi there! Welcome to MaliCat's world! We love to Eat, and Develop Code! Come and hang out with me! Click feed to change the mood and click the code button watch me build!"
+    "Hi there! Welcome to MaliCat's world! I love to Eat, and Develop Code! Come and hang out with me! Click feed to change my mood and click the code button watch me build!"
   );
 }
 
